@@ -6,7 +6,7 @@ import { MaterialsActions } from './materials.actions';
 import { CreateMaterialsDTO, MaterialsDTO, selectRouteParams} from '@users/core/data-access';
 import { Store } from '@ngrx/store';
 
-export const MaterialsInitEffect = createEffect(
+export const materialsInitEffect = createEffect(
   () => {
     const actions$ = inject(Actions);
     const apiService = inject(ApiService);
@@ -35,7 +35,7 @@ export const MaterialsInitEffect = createEffect(
   { functional: true }
 );
 
-export const CreateMaterialEffect = createEffect(
+export const createMaterialEffect = createEffect(
   () => {
     const actions$ = inject(Actions);
     const apiService = inject(ApiService);
@@ -65,7 +65,7 @@ export const CreateMaterialEffect = createEffect(
   { functional: true }
 );
 
-export const RemoveMaterialEffect = createEffect(
+export const removeMaterialEffect = createEffect(
   () => {
     const actions$ = inject(Actions);
     const apiService = inject(ApiService);
